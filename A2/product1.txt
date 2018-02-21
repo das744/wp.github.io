@@ -1,0 +1,3 @@
+p1,Mini Pavolova,$3.90,<img src="photo1.jpg" alt="photo1" width="100" height="80"/>,This is a yammy mini Pavalova. 
+p2,Jam Ball Donut,$3.00,<img src="photo4.jpg"alt="photo4" width="100" height="80"/>,This is a tasty Jam Ball. 
+p3,Strawberry Donut,$3.30,<img src="photo3.jpg"alt="photo4" width="100" height="80"/>,This is a yammy strawberry donut. 

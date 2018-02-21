@@ -1,0 +1,53 @@
+
+
+<?php include ('toppage.php');?>
+<title>Aussie Bakery House</title>
+<?php include ('middlepage.php');?>
+<div id= "whiteboxA">
+
+<?php
+
+	$userFound = False;
+	if (count($_POST) > 0)
+	{ 
+		$users = file("customers.txt");
+		for($i=0; $i< count ($users); $i++)
+
+		{
+			if($i==0)
+				continue;
+			$cells= explode("\t", $users[$i]);
+			
+			$cells[2]= trim($cells[2]);
+			$cells[3]= trim($cells[3]);
+	
+
+			if ($cells[2] == $_POST['email'] && $cells[3] == $_POST['password'])
+			{
+				$_SESSION['email'] = $_POST['email'];
+				$userFound = true;
+				echo "Hello( $_cell[0]).";
+				header("Location:index.php");
+				<?php echo isset($_SESSION['firstname']) ? "Hey ".$_SESSION['firstname'] : "Welcome" ?>
+				 echo "We are a company that sells high quality Bakery."
+				
+			}
+		}
+		if($userFound == false)
+			echo "You are not login.";
+				
+	}
+
+?>
+          <form method = "post" action="" id="index">
+	      <p>Username:<br/> <input type='text' name='email' value=''/></p>
+          <p>Password:<br/> <input type='password' name='password' value=''></p>
+          <p><input type='submit' value='submit' name='Submit'></p>
+          </form>  
+
+
+</div>	
+</div>
+<?php include ('endpage.php');?>
+
+

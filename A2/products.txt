@@ -1,0 +1,3 @@
+p1,Mini Pavolova,$3.90,<img src="photo1.jpg" alt="photo1" width="400" height="430"/>,This is a yammy mini Pavolova. You can either buy at store or make an order for delivery at your door.
+p2,Jam Ball Donut,$3.00,<img src="photo4.jpg"alt="photo4" width="400" height="400"/>,This is a tasty Jam Ball. we can either buy at store or make an order for delivery at your door.
+p3,Strawberry Donut,$3.30,<img src="photo3.jpg"alt="photo4" width="400" height="400"/>,This is a yammy strwberry donut. we can either buy at store or make an order for delivery at your door.

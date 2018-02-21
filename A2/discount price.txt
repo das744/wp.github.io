@@ -1,0 +1,23 @@
+$_SESSION['products'] = array ("1" => array("name"=>"Mini Pavolova", "price" => 3.90,
+							   "2" => array("name"=>"Jam Ball Donut", "price" => 3.00,
+							   "3" => array("name"=>"Strwberry Donut", "price" => 3.30,))))
+	
+
+
+
+
+if(isset ($_POST['user']))
+	{
+			{
+				$_SESSIION['products'][1]["price"] = $_SESSIION['products'][1]["price"] - $_SESSIION['products'][1]["price"]*$discount1/100;
+				$_SESSIION['products'][1]["price"] = $_SESSIION['products'][2]["price"] - $_SESSIION['products'][2]["price"]*$discount2/100;
+				$_SESSIION['products'][1]["price"] = $_SESSIION['products'][3]["price"] - $_SESSIION['products'][3]["price"]*$discount3/100;
+			}
+		else
+			{
+				 $_SESSIION['products'][1]["price"] = $_SESSIION['products'][1]["price"];
+				 $_SESSIION['products'][2]["price"] = $_SESSIION['products'][2]["price"];
+				 $_SESSIION['products'][3]["price"] = $_SESSIION['products'][3]["price"]
+			}
+	}
+	

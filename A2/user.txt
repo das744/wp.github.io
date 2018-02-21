@@ -1,0 +1,5 @@
+username	customername	email	password	p1price	p2price 
+user123	Bob	bob@gmail.com.au	bob123	2.50	2.00
+user456	Matt	matt@gmail.com.au	matt456	2.50	2.00
+user789	Jenny	jenny@gmail.com.au	jenny789	2.00	1.50
+
