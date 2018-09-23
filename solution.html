@@ -1,0 +1,210 @@
+
+  <!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title> Global Warning</title>
+    
+</head>
+
+<body>
+    
+        
+    <nav class="navbar navbar-custom">
+  
+          <! navigation bar for left side  -->
+                    <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"> GLOBAL CLIMATE CHANGE</a>
+                    </div>
+                    <! navigation bar for right side  -->
+            <ul class="nav navbar-nav navbar-right">
+
+                    <li class="nav-item active">
+                    <a href="fact.html">FACTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="effect.html">EFFECT </a></li>
+                    <li><a href="solution.html">SOLUTION</a></li>
+
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+           </ul>
+  
+      </nav>
+
+   <div class="container">
+    
+    <img src="http://www.indiacelebrating.com/wp-content/uploads/Green-House-Effect-and-Global-Warming.jpg" alt="Mister Marbles head tilt" style="width: 100%; height: 650px">
+    </div>
+   
+    <div class="container">
+    <h1> Solution to Stop Global Warming </h1>
+    <h4>
+    Now there are solutions that we can stop global warming. However we human and governments need to move forward to implement the global warming solutions. To reduce global warming we can do to reduce the contribution of greenhouse gases to the atmosphere. Therefore, the solutions that we can reduce global warming are reducing gasoline, electricity and our activities that cause global warming.
+    </h4><br>
+    
+    <h4>
+    
+        To reduce gasoline mean we have a choice to choose a hybrid car that reduce using gasoline. Besides, petrol price are increasing. If a person everyday drives to work they need to pump petrol after 3 days and causes carbon dioxide. Another way to reduce gasoline is take public transport or carpool to work. It can help reduce carbon dioxide and save cost.</h4><br>
+        
+    <h4>
+    Another way to reduce global warming is recycle. Recycle can reduce garbage by reusing plastic bags, bottles, papers or glass. For instance, when we buy foods, we can use our own containers instead of plastic bags. Another example is after finish drinking the water from the bottle; we can reuse it or use our own bottle. If all this is being reuse, human can reduce deforestation and help save environment. Besides, turn off electricity if unused. It can save thousands of carbon dioxide and buy product that have energy saving because it saves cost and save environment.
+    </h4><br>
+        <h4>  Finally, human should stop open burning such as burning dry leafs or burning garbage. It will release carbon dioxide and toxic if burning garbage with plastic. Besides, government should reduce deforestation because the earth temperatures are increasing. Trees will help to improve the temperature on earth.
+
+</h4>
+        
+    </div>
+    
+    
+      
+        <div id="mainform">
+
+        <!-- Required Div Starts Here -->
+                <h1>Leave a comment</h1>
+                <form id="first_form" method="post" action="">
+                      <div>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name"/>
+                      </div>
+                      <div>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name"/>
+
+                      </div>
+                      <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"/>
+
+                      </div>
+                      <div>
+                            <label>Message:</label><textarea id="message" placeholder="Message......."></textarea>
+                      </div>
+                      <div>
+                            <input type="submit" value="Submit" />
+                      </div>
+                </form>
+
+             <hr/>
+
+        </div>
+  
+    
+    <script>
+    $(document).ready(function() {
+        
+    $("form[name='contactform']").submit(function() {
+
+        // do the extra stuff here
+        $.ajax({
+            type: "POST",
+            url: "mail-script.php",
+            data: $(this).serialize(),
+            success: function() {
+                $('.success').fadeIn(100).show();
+            
+
+            }
+        })
+
+    })
+
+  $('#first_form').submit(function(e) {
+    e.preventDefault();
+    var first_name = $('#first_name').val();
+    var last_name = $('#last_name').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+
+    $(".error").remove();
+
+    if (first_name.length < 1) {
+      $('#first_name').after('<span class="error">This field is required</span>');
+    }
+    if (last_name.length < 1) {
+      $('#last_name').after('<span class="error">This field is required</span>');
+    }
+    if (email.length < 1) {
+      $('#email').after('<span class="error">This field is required</span>');
+    } else {
+      var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+      var validEmail = regEx.test(email);
+      if (!validEmail) {
+        $('#email').after('<span class="error">Enter a valid email</span>');
+      }
+    }
+    if (message.length < 5) {
+      $('#password').after('<span class="error">Comment is Required</span>');
+    }
+  });
+        
+
+  $('form[id="second_form"]').validate({
+    rules: {
+      fname: 'required',
+      lname: 'required',
+      user_email: {
+        required: true,
+        email: true,
+      },
+      comment: {
+        required: true,
+        minlength: 50,
+      }
+    },
+    messages: {
+      fname: 'This field is required',
+      lname: 'This field is required',
+      user_email: 'Enter a valid email',
+      psword: {
+        minlength: 'Comment must be at least 50 characters long'
+      }
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+      
+  });
+
+});
+    
+    </script>
+    
+    
+    <div class = "box5">
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="https://ceees.nd.edu/slideshow-folder/understanding-earth/@@images/cb4f48ce-8447-4c9a-82be-f421c311b39a.jpeg" alt="" width="100%" height="1000px">
+                    <div class="top-left">
+                    <div class="row">
+
+                   <div class="col-md-6" >
+                            <h2> <strong>  ABOUT </strong></h2>
+                            <h4> <a href="fact.html" style="color: aliceblue">FACT</a></h4>
+                            <h4> <a href="effect.html" style="color: aliceblue">EFFECT</a></h4>
+                            <h4><a href="solution.html" style="color: aliceblue">SOLUTION</a></h4>
+                    </div>
+                       
+                      <div class="col-md-9" >
+                          
+                            <h2> <a href="contact_form.php" style="color: aliceblue">CONTACT US</a></h2>
+
+
+                      </div>
+                       </div>
+                    <!-- Footer -->
+
+                    </div>
+               
+            </div>
+        </div>
+    
+    
+    </div>
+        </div>
+    
+    </body>
+</html>

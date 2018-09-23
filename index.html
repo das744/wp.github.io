@@ -1,750 +1,291 @@
-<!DOCTYPE html>
-<html>
+
+  <!DOCTYPE html>
+<html lang="">
 <head>
-<title> </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-#navigation-container {
-  width: 1600px;
-  margin: 0 auto;
-  height: 70px;
-}
-
-.navigation-bar {
-  
-  height: 80px;
-  width: 100%;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-     background-color:  #b3d9ff;;
-	 box-shadow: 10px 10px 5px #888888
-}
-
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
-	color: white;
-	font-weight:bold;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 70px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-	box-shadow: 10px 10px 5px #888888
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-	
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;color:red;font-weight:bold;}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-	
-	
-}
-.mySlides {display:none;}
-.oval {
-        width: 90px;
-        height: 45px;
-		text-align: center;
-        background: DodgerBlue;
-        border-radius: 60%;
-		color:white;
-		margin-right:1rem; 
-		font-size: 14px;
-		text-align: center;
-		padding-top:10px;
-		box-shadow: 10px 10px 5px #888888
-					
-    }
-	.ovalA {
-        width: 210px;
-        height: 55px;
-		text-align: center;
-        background: #00e673;
-        border-radius:40px;
-		color:white;
-		margin-right:2rem; 
-		font-size: 16px;
-		line-align:10px;
-		padding-top:15px;
-		margin-left:300px;  
-		box-shadow: 10px 10px 5px #888888;		
-					
-    }
-	.ovalB {
-        width: 210px;
-        height: 55px;
-		text-align: center;
-        background: #00e673;
-        border-radius:40px;
-		color:white;
-		margin-right:2rem; 
-		font-size: 16px;
-		line-align:10px;
-		padding-top:15px;
-		margin-left:100px;
-		box-shadow: 10px 10px 5px #888888;		
-    }
-	.ovalC {
-        width: 160px;
-        height:60px;
-		text-align: center;
-        background: #004080 ;
-        border-radius:40px;
-		color:white;
-		margin-right:2rem; 
-		font-size: 16px;
-		line-align:10px;
-		padding-top:15px;
-		margin-left:100px;
-    }
-	.ovalD {
-        width: 160px;
-        height:60px;
-		text-align: center;
-        background: white ;
-        border-radius:40px;
-		color:blue;
-		margin-right:2rem; 
-		font-size: 16px;
-		line-align:10px;
-		padding-top:15px;
-		margin-left:100px;
-    }
-	.ovalE {
-        width: 190px;
-        height:65px;
-		text-align: center;
-        background: #00e673 ;
-        border-radius:40px;
-		color:white;
-		margin-right:2rem; 
-		font-size: 16px;
-		line-align:10px;
-		padding-top:15px;
-		margin-left:600px;
-		box-shadow: 10px 10px 5px #888888;	
-    }
-.box1{
-	width: 100%;
-    height: 250px;
-	background-color: #99b3ff;
-	Transparency: 50%;
-}
-.box2{
-	width: 100%;
-    height: 275px;
-	background-color: ;
-}
-.box3{
-	width: 100%;
-    height: 650px;
-	background-color:#004080;
-}
-.box4{
-	width: 100%;
-    height: 1200px;
-	background-color: white;
-}
-.box5{
-	width: 100%;
-    height: 205px;
-	background-color: #999999;
-}
-.box6{
-	width: 100%;
-    height: 405px;
-	background-color: ;
-}
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.centeredF {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.box8{
-	width: 100%;
-    height: 300px;
-	background-color: #999999;
-}
-.box9{
-		width: 200px;
-		height: 100px;
-		margin-left:20px;
-		margin right:20px;
-		background-color:;
-		}
-		
-		.box10{
-		width: 150px;
-		height: 120px;
-		margin-left:20px;
-		margin right:20px;
-		background-color:;
-		}
-		.box11{
-		width: 350px;
-		height: 160px;
-		margin-left:20px;
-		margin right:20px;
-		background-color:;
-		}
-		.box12{
-		width: 100%;
-		height: 260px;		
-		background-color:#5c5c3d;
-		color:white;
-		}
-		
-.tech-slideshow {
-  height: 100px;
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  
-}
-
-.mover-1 {
-  height: 150px;
-  width: 10000px;
-  
-  position: absolute;
-  overflow-x:hidden;
-  top: 0;
-  left: 0;
-
-  animation: moveSlideshow 7s linear infinite;
-}
-
-.mover-1 img {
-  display:inline-block;
-  vertical-align:middle;
-  width:100px;
-  margin:0;
-}
-
-@keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-520px);  
-  }
-}
-.fa {
-  padding: 35px;
-  
-  font-size: 35px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin-right:1rem; 
-  font-size: 25px;
-  line-align:5px;
-  border-radius: 60%;
-  position: relative;
-  margin: 5px 2px;
-  margin-left: 40px;
-  
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.fa-android {
-  background: #a4c639;
-  color: white;}
-  
-.text-style{
-	font-size: 15px;
-	text-align:center; 
-	margin-top:5px;
-	position: relative;
-	top: 5px;
-	font-weight:bold;
-}
-
-
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="example1/contactfm.js"></script>
+    <title> Global Warning</title>
+    
 </head>
 
-
- <body style=" background-color: #d7d7dd;  height= 3000px; weight= 1125px;">
-<div class="navigation-bar">
-    <div id="navigation-container">
-      <table>
-        <tr>
-          <td><a href="home.html"><img style="float:left height:40px; weight: 40px" src="logo.png"></a></td>
-		  
-		  
-          <td>
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  </td>
-		<td>   
-
-<ul>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
-    <div class="dropdown-content">
-      <a href="overview.html">Overview</a>
-      <a href="customer.html">Customer</a>
-      <a href="Blog.html">Blog</a>
-	  <a href="Event.html">Event</a>
-	  <a href="Partners.html">Partners</a>
-	  <a href="Contact Us.html">Contact Us</a>
-	  </li>
-	  
-	  <li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">INDUSTRY</a>
-		  <div class="dropdown-content">
-		  <a href="Manufacturing.html">Manufacturing</a>
-		  <a href="Retail.html">Retail</a>
-		  <a href="Construction.html">Construction</a>
-		  <a href="Bank.html">Bank</a>
-		  <a href="Transport.html">Transport</a>
-		  <a href="Education.html">Education</a>
-		  <a href="Energy and Utility.html">Energy and Utility</a>
-		  <a href="Healthcare.html">Healthcare</a>
-		  <a href="Govt.html">Government</a>
-		  <a href="Insurance.html">Insurance</a>
-		  <a href="IT.html">IT</a>
-		  <a href="Oil and Gas.html">Oil and Gas</a>
-	  </li>
-	  <li class="dropdown">
-		<a href="javascript:void(0)" class="dropbtn">FEATURE</a>
-		  <div class="dropdown-content">
-		  <a href="#">Questionnaire</a>
-		  <a href="#">Do Digital</a>
-		  <a href="#">Email Notification</a>
-		  <a href="#">Fillout and Send</a>
-		  <a href="#">Offline Capabilities</a>
-		  <a href="#">Dashboards and Views</a>
-	  </li>	  
-	  <li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">SOLUTION</a>
-		  <div class="dropdown-content">
-		  <a href="#">Compliance Checkpoint</a>
-		  <a href="#">Auditing</a>
-		  <a href="#">Consulting</a>
-	  </li>
-	  <li><a href="#pricing">PRICING</a></li>
-	  <li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">SUPPORT</a>
-		  <div class="dropdown-content">
-		  <a href="#">Getting Started</a>
-		  <a href="#">Knowledge base</a>
-		  <a href="#">FAQ's</a>
-	  </li>  
-    </div>
-  </li>
-</ul>
-</td>
-
-	<td>	 
-		&nbsp;
-		  &nbsp;
-		  &nbsp;
-		  <th><div  class="oval"><a href="Demo.html"> <strong> DEMO</strong></a></div></th>
-		
-		<th><div  class="oval"><a href="Signup.html"><strong> SIGN UP</strong></a></div></th>
-		 <th><a href="#"><strong> Search</a></th>
-	</td>	
-	</tr>	
-	</table>
-</br>	
-	<div class="w3-content w3-section" style="max-width:100%">
-  <img class="mySlides" src="sliderimage1.png" style="width:100%; ">
-  <img class="mySlides" src="sliderimage2.png" style="width:100%; ">
-  <img class="mySlides" src="sliderimage3.png" style="width:100%; ">
-</div>
-<script>
-var myIndex = 0;
-slideshow();
-
-function slideshow() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(slideshow, 1000); // Change image every 2 seconds
-}
-</script>
-	
-<div class="box1">
-<table>
-<tr>
+<body>
     
-		<th style="padding: 70px; "><div  class="ovalA"><a href="#"> <strong> Introduction Video</strong></a></div></th>
-		<th><div  class="ovalB"><a href="#"><strong> Request for Demo</strong></a></div></th>	
-		
-</tr>	
-</table>
-</div>
+      <nav class="navbar navbar-custom">
+  
+      <! navigation bar for left side  -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"> GLOBAL CLIMATE CHANGE</a>     
+        </div>
+      <! navigation bar for right side  -->
+    <ul class="nav navbar-nav navbar-right">
+       
+      <li class="nav-item active">
+          <a href="fact.html">FACTS</a></li>
+      <li class="nav-item"><a class="nav-link" href="effect.html">EFFECT </a></li>
+        <li><a href="solution.html">SOLUTION</a></li>
+      
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+    </ul>
+  
+</nav>
 
-<div class="box2">
-<table style="margin-left:350px;">
-    <tr >
-		<td><img style="float:left height:70px; weight: 70px" src="ebook.png"></td>
-		<td>
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  </td>
-		<td>
-		<th>
-		<p style="font-size: 25px">FREE eBook</p>
-		<p> Learn 10 steps to help you better manage Audit </p>
-		<div  class="ovalB"><a href="#"><strong> DOWNLOAD NOW</strong></a></div>
-		</th>
-		</td>		
-    </tr>	
-</table>
-</div>
 
-<div class="box3">
-<p style= "font-size: 33px;color:white;text-align: center; margin-top:20px;position: relative;top: 6px;"> <strong>Products ans Services</strong></p>
+  <!-- Full Page Image Background Carousel Header -->
+  <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-<table style="margin-left:250px;">
-    <tr >
-		<td>
-		<th>
-		<img style="float:left height:70px; weight: 70px" src="computers-2.png">
-		<p style= "color:white; font-size: 30px"> Audit Risk and</br>Compliance Expert</p>
-		<div  class="ovalD"><a href="#"><strong> Learn more</strong></a></div>
-		</th>
-		</td>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td style="border-left:2px solid white;height: 300px">
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		</td>
-		<td>
-		<th>
-		<img style="float:left height:70px; weight: 70px" src="services-images.png">
-		<p style= "color:white; font-size: 30px"> Professional Auditing </br> and Consulting Services </p>
-		<div  class="ovalD"><a href="#"><strong> Learn more</strong></a></div>
-		</th>
-		</td>		
-    </tr>	
-</table>
-</div>
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://static4.uk.businessinsider.com/image/58793d1edd089509208b4b49/a-new-study-just-blew-a-hole-in-one-of-the-strongest-arguments-against-global-warming.jpg');"></div>
+                
+                <div class="carousel-caption" class="whitebox">
+                     <h2 class="animated fadeInLeft">Global Warning</h2>
+                     <p class="animated fadeInUp">EARTH is our MOTHER We should take care of HER</p>
+                     <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">FACT</a></p>
+                </div>
+                
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('https://climate.nasa.gov/system/news_items/main_images/2804_141_DensityMapGSFC1280.jpeg');"></div>
+                    <div class="carousel-caption">
+                     <h1 class="animated fadeInDown">Water heatware cooks the Golf of Maine</h1>
+                     <p class="animated fadeInUp"> </p>
+                     <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">EFFECT</a></p>
+                </div>
+            </div>
+            
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/7/0/4/9/1119407-1-eng-GB/What-does-COP21-mean-for-the-food-industry_wrbm_large.jpg');width: 100%; height: 100%"></div>
+                <div class="carousel-caption">
+                     <h1 class="animated fadeInRight">SAVE OUR WORLD</h1>
+                     <p class="animated fadeInRight"></p>
+                     <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large"> SOLUTION </a></p>
+                </div>
+            </div>
+        </div>
 
-<div class="box6">
-<p style= "font-size: 27px;color:#004080;text-align: center; margin-top:20px;position: relative;top: 6px;"> <strong>Compliance Checkpoint Functionality</strong></p>
-	</br>
-	
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>  
+    
+    <!-- box 2-->
+    <div class="box1text"><p>NEWS and FEATURES</p></div>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-4">
+                <img src="https://climate.nasa.gov/system/news_items/list_view_images/2772_cygnss-inorbit-artconcept_002.jpg" alt="Mister Marbles head tilt" style="width: 100%; height: 300px" >
+                <h3>Flood Detection Satelite.</h3><br>
+                <a href="feature1.html" class="btn btn-primary btn-lg" button>Learn More</a>
+          </div>  
+          <div class="col-sm-4">
+                <img src="https://climate.nasa.gov/system/news_items/main_images/2751_earth_0-768px.jpg" alt="Kermit the Dog" style="width: 100%; height: 300px" >
+                <h3>World on Fire</h3><br> 
+                <a href="feature2.html" class="btn btn-primary btn-lg" role="button">Learn More</a>
+          </div>
+          <div class="col-sm-4">
+                <img src="https://climate.nasa.gov/system/news_items/list_view_images/2759_list_image.gif" style="width: 100%; height: 300px" > 
+                <h3>ECOSTRESS Lanches to space Station</h3>
+                <a href="feature3.html" class="btn btn-primary btn-lg" button>Learn More</a>
+             
+          </div> 
+      </div>
+   </div>
+    
+    <div class="box2"> 
+        <div class="parallax"></div>      
+    </div>
+      
 
-	<table style=" padding-left: 10%">
-		<tr>
-		<td style=" padding-right: 45px"><div class="box9">
-		<img style=" height:140px; weight: 150px; " src="compliance2.jpe">
-		<div class="text-style"><button class="w3-button w3-hover-red"  onclick="window.location.href='inspection.html'">Inspection </button> </div>
-		</div>
-		</td>
-		
-		
-		<td style=" padding-right: 55px"><div class="box9">
-		<img style=" height:140px; weight: 150px; " src="compliance-rules.jpg">
-		<div class="text-style"><button class="w3-button w3-hover-red" onclick="window.location.href='audit.html'"> Audit</button> </div>
-		</div>
-		</td>
-		
-		<td style=" padding-right: 45px"><div class="box9">
-		<img style=" height:140px; weight: 150px; " src="API.png">
-		<div class="text-style"><button class="w3-button w3-hover-red" id="myBtn"onclick="window.location.href='integration.html'"> API Integration </div>
-		</div>
-		</td>
-		
-		<td style="padding-right: 45px"><div class="box9">
-		<img style=" height:140px; weight: 130px; " src="compliance4.jpg">
-		<div class="text-style"><button class="w3-button w3-hover-red" id="myBtn" onclick="window.location.href='Analytics.html'"> Analysis  </div>
-		</div>
-		</td>
-		
-		<td><div class="box9">
-		<img style=" height:140px; weight: 130px" src="report1.jpg">
-		<div class="text-style"><button class="w3-button w3-hover-red" id="myBtn"onclick="window.location.href='report.html'"> Instant Report</div>
-		</div>
-		</td>
-	</tr>
-	</table>
-	</br>
-	
-</div>
+     <div class="container">
+          <div class="row" >
 
-<div class="box4">
+               <div class="col-sm-6" >
+                <h2 >Responsive Aspect Ratio</h2>
+                <p> NASA’s Global Climate Change website hosts an extensive collection of global warming resources for media, educators, weathercasters and public speakers. Browse by topic and by media type, including videos, social media shareables, infographics, quizzes and interactives.</p>
 
-		<p style= "font-size: 33px;
-		color:Black;
-		text-align: center; 
-		margin-top:1px;
-		position: relative;
-		top: 35px;"> <strong>Discover Who Trusts Compliance </br> Experts With Their Compliance Needs</strong></p>
-		
-		</br>
-		</br>
-		  
-			<div class="tech-slideshow">
-			<div class="mover-1">
-			<img src="aus-goverment-logo.png" >
-			<img src="bupa-logo.png">
-			<img src="city of melbourne-logo.png">
-			<img src="city-west-water-logo.png">
-			<img src="coles-logo.png">
-			<img src="linfox-logo.png" >
-			<img src="metro-logo.png">
-			<img src="monash-logo.png">
-			<img src="vicroads-logo.png">
-			<img src="nata-logo.png" >
-			<img src="police-logo.png">
-			<img src="target-logo.png">
-			<img src="toll-logo.png">
-			</div>
-			</div>
-			
-		</br>
-		</br>
-		</br>
-		<div  class="ovalE" ><a href="#"><strong> View Our Clients</strong></a></div>
-		</br>
-		</br>
-		<p style= "font-size: 30px;
-		color:Black;
-		text-align: center; 
-		margin-top:1px;
-		position: relative;
-		top: 35px;"> <strong>Compliance Audit & Management Blog</strong></p>
-		</br>
-		</br>
-	<table>
-	<tr>
-		<table>
-		<tr>
-		<td><div class="box9">
-		<img style=" height:130px; weight: 130px" src="blog1.jpeg">
-		<p style= "text-align: center;"> What F1 Racing Can Teach </br>Us About Compliance</br>
-	Posted by Paul Molenaar <br/>on Nov 9, 2017 4:02:08 PM </p>
-		</div>
-		</td>
-		<td><div class="box9">
-		<img style=" height:130px; weight: 130px" src="blog2.jpg">
-		<p style= "text-align: center"> A Paradigm Shift in Compliance Thinking </br>
-Posted by Paul Molenaar </br>on Sep 28, 2017 2:34:43 PM  </p>
-		</div>
-		</td>
-		<td><div class="box9">
-		<img style=" height:130px; weight: 130px" src="blog3.jpeg">
-		<p style= "text-align: center;"> Compliance Software is a Silver Lining for Your Business
-Posted by Paul Molenaar on Sep 14, 2017 7:36:48 AM </p>
-		</div>
-		</td>
-		<td><div class="box9">
-		<img style=" height:130px; weight: 130px" src="blog4.jpg">
-		<p style= "text-align: center;"> How Compliance can Contribute to Exponential Growth
-Posted by Paul Molenaar on May 25, 2017 6:43:00 AM </p>
-		</div>
-		</td>
-		<td><div class="box9">
-		<img style=" height:130px; weight: 130px" src="blog5.jpeg">
-		<p style= "text-align: center; "> How a Compliance Process Can Help Manage WHS Procedures
-Posted by Paul Molenaar on Apr 13, 2017 7:25:00 AM </p>
-		</div>
-		</td>
-		</tr>
-		
-		
-	</table>
-		
-	</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		<p style= "font-size:30px;
-		color:Black;
-		text-align: center; 
-		margin-top:1px;
-		position: relative;
-		top: 25px;"> <strong>Follow Us For The Latest Compliance </br>News and Updates</strong></p>
-		</br>
-		</br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		  &nbsp;
-		 &nbsp;
-		 &nbsp;
-		 &nbsp;
-		 &nbsp;&nbsp;
-		 &nbsp;
-		 &nbsp;
-		 &nbsp;
-		 &nbsp;
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<a href="#" class="fa fa-google"></a>
-		<a href="#" class="fa fa-linkedin"></a>
-		<a href="#" class="fa fa-youtube"></a>
-		<a href="#" class="fa fa-android"></a>
-		</div>
-		
-<div class ="box12">		
-<table>
-		<tr>
-		<td><div class="box10">
-		
-		<p style= "text-align: left; "> <strong>  About </strong>
-		</br>Customer
-		</br> Partners
-		</br>Newsroom
-		</br> Contact Us
-		</p>
-		</div>
-		</td>
-		<td><div class="box10">
-		
-		<p style= "text-align: left;"> <strong>  Features</strong> 
-		</br>Questionnaire
-		</br>Do Digital
-		</br>Email Notification
-		</br> Offline Capabilities
-		</p>
-		</div>
-		</td>
-		
-		<td><div class="box10">
-		
-		<p style= "text-align: left"> <strong>   Solution </strong> 
-		</br>Software
-		</br>Auditing
-		</br>Consulting
-		</p>
-		</div>
-		</td>
-		<td><div class="box10">
-		
-		<p style= "text-align: left;"> <strong>   Support </strong> 
-		</br>Resources
-		</br>
-		</br>
-		</p>
-		</div>
-		</td>
-		<td><div class="box10">
-		
-		<p style= "text-align: left; "> <strong>   Clients </strong> 
-		</br>Case studies
-		</br>Testimonial
-		</br>
-		</p>
-		</div>
-		</td>
-		
-		<td><div class="box11">
-		<a href="home.html"><img style="height:60px; weight: 80px" src="logo.png"></a>
-		</br><p> 5/46-50 Old Princes Highway
-		</br>Beaconsfield VIC 3807 Australia
-		</br>+61 3 9707 4841
-		</br> enquiries@complianceexperts.com
-		</p>
-		</div>
-		</td>
-		</tr>
-		
-</table>
-<p>    © COMPLIANCE EXPERTS (®) ALL RIGHTS RESERVED 2017|     <a href="Energy and Utility.html">PRIVACY</a>
-  </p>
-  </div>
+                <h3>Check out <a href="https://www.youtube.com/watch?v=oJAbATJCugs">Global Warming Video</a> for more information</h3>
+                </div>
 
-</div>
-</div>
+
+                <div class="col-sm-6">
+                  <img src="https://climate.nasa.gov/system/news_items/main_images/2743_keeling_image_a1.jpg" style="width: 550px; height: 300px">
+                </div>
+        </div>     
+    </div>
+
+        <div class="">
+            <div class="box1text"><p>Let's Make The Difference</p>
+            <img src="https://climate.nasa.gov/system/basic_html_elements/648_making_a_difference.jpg" style="height: 500px";> 
+            </div>
+        </div>
+    
+    
+      
+              <div id="mainform">
+                <h1>Leave a comment</h1>
+                <form id="first_form" method="post" action="">
+                      <div>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name"/>
+                      </div>
+                      <div>
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name"/>
+
+                      </div>
+                      <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"/>
+
+                      </div>
+                      <div>
+                          <label>Message:</label><textarea id="message" placeholder="Message......."></textarea>
+                      </div>
+                      <div>
+                        <input type="submit" value="Submit" />
+                      </div>
+                </form>
+                <hr/>
+
+              </div>
+   
+    
+    <script>
+    $(document).ready(function() {
+        
+    $("form[name='contactform']").submit(function() {
+
+        // do the extra stuff here
+        $.ajax({
+            type: "POST",
+            url: "mail-script.php",
+            data: $(this).serialize(),
+            success: function() {
+                $('.success').fadeIn(100).show();
+            
+
+            }
+        })
+
+    })
+
+  $('#first_form').submit(function(e) {
+    e.preventDefault();
+    var first_name = $('#first_name').val();
+    var last_name = $('#last_name').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+
+    $(".error").remove();
+
+    if (first_name.length < 1) {
+      $('#first_name').after('<span class="error">This field is required</span>');
+    }
+    if (last_name.length < 1) {
+      $('#last_name').after('<span class="error">This field is required</span>');
+    }
+    if (email.length < 1) {
+      $('#email').after('<span class="error">This field is required</span>');
+    } else {
+      var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+      var validEmail = regEx.test(email);
+      if (!validEmail) {
+        $('#email').after('<span class="error">Enter a valid email</span>');
+      }
+    }
+    if (message.length < 5) {
+      $('#password').after('<span class="error">Comment is Required</span>');
+    }
+  });
+        
+
+  $('form[id="second_form"]').validate({
+    rules: {
+      fname: 'required',
+      lname: 'required',
+      user_email: {
+        required: true,
+        email: true,
+      },
+      comment: {
+        required: true,
+        minlength: 50,
+      }
+    },
+    messages: {
+      fname: 'This field is required',
+      lname: 'This field is required',
+      user_email: 'Enter a valid email',
+      psword: {
+        minlength: 'Comment must be at least 50 characters long'
+      }
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+      
+  });
+
+});
+</script>
+       
+
+    <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="img-responsive" src="https://ceees.nd.edu/slideshow-folder/understanding-earth/@@images/cb4f48ce-8447-4c9a-82be-f421c311b39a.jpeg" alt="" width="100%" height="1000px">
+                   <div class="top-left">
+
+                   <div class="row">
+
+                   <div class="col-md-6" >
+                            <h2> <strong>  ABOUT </strong></h2>
+                            <h4> <a href="fact.html" style="color: aliceblue">FACT</a></h4>
+                            <h4> <a href="effect.html" style="color: aliceblue">EFFECT</a></h4>
+                            <h4><a href="solution.html" style="color: aliceblue">SOLUTION</a></h4>
+                    </div>
+                       
+                      <div class="col-md-9" >
+                          
+                            <h2> <a href="contact_form.php" style="color: aliceblue">CONTACT US</a></h2>
+
+
+                      </div>
+                       </div>
+                        <!-- Footer -->
+                        </div>
+
+                 </div>
+             </div>
+    </div>
+    
 </body>
 </html>
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
