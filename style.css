@@ -270,11 +270,12 @@ p{padding:10px}
 background-color: #D6EAF8;
 font-size: 22px;
 width:960px;
+max-width: 100%;
 margin:20px auto;
 margin-top: 10px;
 padding-top:20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+margin-bottom: 20px;
+padding-bottom: 20px;
 font-family: 'Fauna One', serif;
 box-shadow: 10px 10px 10px #888888;;
     
